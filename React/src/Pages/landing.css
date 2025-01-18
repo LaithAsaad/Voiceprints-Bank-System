@@ -1,0 +1,109 @@
+.landing-wrapper {
+    overflow-y: auto;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./Assets/landing.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh;
+}
+
+@media (max-width: 576px) {
+    main {
+        grid-auto-rows: min-content;
+        grid-template-rows: auto;
+    }
+}
+
+.landing-button {
+    color: #111;
+    background-color: #fff;
+    border-radius: 30px;
+    min-width: 150px;
+    padding: 1rem 2rem;
+    border: 1px solid white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.button:hover,
+.button:focus-visible {
+    border: none;
+    transition: #fff 0.1s ease-out;
+}
+
+.text {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%"><defs><filter id="fire"><feTurbulence baseFrequency="0.01" numOctaves="6" seed="1" /><feColorMatrix type="hueRotate" values="240" result="cm"><animate attributeName="values" from="240" to="250" dur="4s" repeatCount="indefinite" /></feColorMatrix><feColorMatrix type="matrix" values="0 0 1 0 0 0 0 1.2 0 0.2 0.2 4 4.5 -4 4 4 4 4 1 4" /></filter></defs><rect width="100%" height="100%" filter="url(%23fire)"></rect></svg>');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #0000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    -webkit-text-stroke: .025em #00549963;
+    text-shadow: 0 0 1em #00a6ff33;
+    mix-blend-mode: color-dodge;
+}
+
+.view {
+    position: relative;
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    place-items: center;
+}
+
+.view--1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.view--1 p {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.view--2 {
+    background: var(--color-bg-view-2);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.view.view--open {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.overlay {
+    grid-area: 2 / 2 / 2 / 2;
+    z-index: 1000;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0%;
+}
+
+.landing-p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(190, 190, 190);
+}

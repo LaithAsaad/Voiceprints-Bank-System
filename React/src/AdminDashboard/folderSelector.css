@@ -1,0 +1,245 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.main-container:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.row-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    top: 10%;
+}
+
+.init-container {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.first-row {
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.select-section {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.select-section:hover {
+    transform: translateY(-5px);
+}
+
+.select-section-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    width: 100%;
+}
+
+.select-folder-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.selectFolderPath {
+    margin-top: 5px;
+    font-style: italic;
+    color: #555;
+}
+
+.align-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.select-input-group {
+    margin-bottom: 20px;
+}
+
+.select-label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    font-size: 13px;
+    width: 100%;
+    display: flex;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.select-input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.select-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.more-description {
+    font-size: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+.start-button {
+    width: 100%;
+    color: #fff;
+    background-color: #007bff;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+
+.popup-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+
+
+.folder-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+
+}
+
+.folder-list li {
+    padding: 12px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    margin: 8px 0;
+
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+
+}
+
+.folder-list li:hover {
+    background-color: #e0e0e0;
+}
+
+
+.close-button {
+    background-color: #d9534f;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.close-button:hover {
+    background-color: #c9302c;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

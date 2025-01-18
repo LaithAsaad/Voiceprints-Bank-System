@@ -1,0 +1,101 @@
+.admin-dashboard {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-greeting h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+.admin-greeting p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #666;
+}
+
+.admin-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.admin-image img {
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.admin-functions {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.admin-functions h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.function-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.function-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.function-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.function-item h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #004D74;
+}
+
+.function-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.control-button {
+    margin: 5px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

@@ -1,0 +1,114 @@
+.table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-wrapper {
+    width: 100%;
+    max-width: 800px;
+}
+
+.user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-user-button {
+    display: flex;
+    align-items: center;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-user-button:hover {
+    background: #007BFF;
+}
+
+.add-icon {
+    margin-right: 8px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+tr:nth-child(even) {
+    background: #f3f3f3;
+}
+
+th,
+td {
+    border: 1px solid #e0e0e0;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+th {
+    background: #007BFF;
+    color: #fff;
+}
+
+td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.edit-icon {
+    color: #74abf9;
+    margin-right: 20px;
+}
+
+.delete-icon {
+    color: #e74c3c;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.page-button {
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: #007BFF;
+    background-color: #fff;
+}
+
+.page-button:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.page-button.active {
+    background-color: #007BFF;
+    color: #fff;
+}
